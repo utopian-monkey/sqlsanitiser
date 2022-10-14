@@ -7,7 +7,7 @@ int main(string username, string password)
    string arr[]= {"--"," or "," #","/*", ";"," ","'",};
    username= username+" ";
    password=password+" ";
-   for(int i=0;i<arr.size();i++)
+   for(int i=0;i<sizeof(arr)/sizeof(arr[0]);i++)
    {
         for(int j=0;j<username.length()-arr[i].length();j++)
         {
